@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+   
+    <title>Traveller Spot</title>
+    <style>
+*{
+margin: 0;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-image:linear-gradient(180deg, #434242 0%, rgba(255, 255, 255, 0) 100%), url("images/diego-jimenez-A-NVHPka9Rk-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position-x: center;
+
+    
+}
+
+ul{
+list-style-type: none;
+float: right;
+margin-top: 20px;
+}
+ul li{
+    display: inline;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent ;
+    padding: 5px 20px;
+    border-radius: 10%;
+    transition: 0.6s ease;
+
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+
+
+}
+h2{
+   font-size: 32px;
+    float: left;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border:3px solid #fff;
+    border-radius: 10%;
+    
+    }
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 50px;
+    font-style: oblique;
+}
+.title h3{
+    color: #fff;
+    font-size: 30px;
+}
+.overlay::after{
+height: 100%;
+width: 100%;
+opacity: .9;
+background: #000;
+
+}
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius:10% ;
+
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+
+}
+.change:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: gold;
+    transition: 0.6s ease;
+
+}
+
+@keyframes changetext{
+    
+    0%{content:"L" ;}
+    2%{content:"La" ;}
+    4%{content:"Lad" ;}
+    6%{content:"Lada" ;}
+    08%{content:"Ladak" ;}
+    10%{content:"Ladakh" ;}
+    12%{content:"O" ;}
+    14%{content:"Oo" ;}
+    16%{content:"Oot" ;}
+    18%{content:"Ooty" ;}
+    20%{content:"K" ;}
+    22%{content:"Ka" ;}
+    24%{content:"Kas" ;}
+    26%{content:"Kash" ;}
+    28%{content:"Kashm" ;}
+    30%{content:"Kashmi" ;}
+    32%{content:"Kashmir" ;}
+    34%{content:"D" ;}
+    36%{content:"Da" ;}
+    38%{content:"Dar" ;}
+    40%{content:"Darj" ;}
+    42%{content:"Darje" ;}
+    44%{content:"Darjee" ;}
+    46%{content:"Darjeel" ;}
+    48%{content:"Darjeeli" ;}
+    50%{content:"Darjeelin" ;}
+    52%{content:"Darjeeling" ;}
+    54%{content:"S" ;}
+    56%{content:"Si" ;}
+    58%{content:"Sik" ;}
+    60%{content:"Sikk" ;}
+    62%{content:"Sikki" ;}
+    64%{content:"Sikkim" ;}
+    66%{content:"S" ;}
+    68%{content:"Sh" ;}
+    70%{content:"Shi" ;}
+    72%{content:"Shim" ;}
+    74%{content:"Shiml" ;}
+    76%{content:"Shimla" ;}
+    78%{content:"M" ;}
+    80%{content:"Mu" ;}
+    81%{content:"Mus" ;}
+    82%{content:"Muss" ;}
+    83%{content:"Musso" ;}
+    84%{content:"Mussoo" ;}
+    85%{content:"Mussoor" ;}
+    86%{content:"Mussoori" ;}
+    87%{content:"Mussoorie" ;}
+    89%{content:"And Many More.." ;}
+} 
+    </style>
+
+
+</head>
+<body>
+    <section class="overlay">
+<header>
+
+<div class="main">
+   
+    <div class="logo">
+        <h2>Traveller Spot</h2>
+
+    </div>
+<ul>
+<li><a href="Anirudh.html" target="_blank">Home Page</a></li>
+<li><a href="loginpage.html">Login Page</a></li>
+<li><a href="regestration.html">New User</a></li>
+<li><a href="#">Contacts</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+
+</div>
+<div class="title">
+<center><h1>Hey Traveller!!!</h1></center>
+<h3>Here you can find the places to travel</h3>
+
+<p><center><h1>like <span class="change"></span></h1></center></p>
+
+</div>
+<div class="button">
+<a href="loginpage.html" class="btn">Login Here</a>
+<a href="#" class="btn">Contact Us</a>
+
+
+</div>
+</header>    
+</section>
+</body>
+</html>
